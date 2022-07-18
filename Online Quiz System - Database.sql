@@ -603,3 +603,10 @@ FROM quiz;
 --Days passsed from the exam date
 SELECT category, sysdate-quiz_date AS DAYS_PASSED
 FROM quiz;
+
+--View for students of CSE department
+CREATE VIEW CSE_STUDENT AS
+SELECT * FROM student
+WHERE student_dept='CSE';
+
+SELECT * FROM CSE_STUDENT;
